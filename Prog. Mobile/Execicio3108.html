@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio</title>
+    </head>
+    <body>
+        <button onclick="ajustaValores()" >Ajustar preços</button>
+    </body>
+
+    <script>
+
+    const produtos = [
+            {
+            "nome": "Biscoito",
+            "preco": 4.25
+            },
+            {
+            "nome": "Arroz",
+            "preco": 3.35
+            },
+            {
+            "nome": "Feijao",
+            "preco": 5.50
+            }
+        ]
+
+        function ajustaValores(){
+            produtos.map((produto) =>{
+                console.log(`Preço antigo de ${produto.nome}: ${produto.preco}`)
+                console.log(`Preço com reajuste: ${produto.preco + 1.5}`)
+
+            })
+        }
+
+    </script>
+</html>
+
+
+
