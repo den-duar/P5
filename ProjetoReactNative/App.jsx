@@ -1,10 +1,17 @@
 
 import Central from "./src/Central";
+import Primeiro from "./src/components/Primeiro";
+import PrimeiroProps from "./src/components/PrimeiroProps";
+import { View } from "react-native";
+import estilos from "./src/estilos";
 
 export default function App() {
   return (
 
-      <Central/>
+      <View style = {estilos.text}>
+      <Primeiro/>
+      <PrimeiroProps/>
+      </View>
 
   );
 }
