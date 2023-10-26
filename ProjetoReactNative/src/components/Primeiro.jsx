@@ -1,14 +1,11 @@
-import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
-import estilos from '../estilos'
+
+import { Text } from 'react-native'
+import Estilos from './Estilos'
+
 
 const Primeiro = () => {
   return (
-
-        <View>
-            <Text>Ola mundo!</Text>
-        </View>
-
+            <Text style = {Estilos.text}>Ola mundo!</Text>
   )
 }
 

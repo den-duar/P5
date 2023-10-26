@@ -1,12 +1,13 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+
+import { Text } from 'react-native'
+import Estilos from './Estilos'
 
 const PrimeiroProps = (props) => {
 
     const texto = props.numero >= 10 ? "Numero Grande!" : "Numero Pequeno!"
     return (
         
-            <Text>
+            <Text style = {Estilos.text}>
                 {texto}
             </Text>
             
