@@ -4,7 +4,7 @@ import { View } from "react-native";
 import Estilos from "./src/components/Estilos";
 import { Group1, Group2 } from "./src/components/Multi";
 import Aleatorio from "./src/components/Aleatorio";
-import VerificaNum from "./src/components/VerificaNum";
+import MaxMin from "./src/components/MaxMin";
 
 export default function App() {
   return (
@@ -17,9 +17,9 @@ export default function App() {
         <PrimeiroProps/>
         <Group1/>
         <Group2/>
-        <VerificaNum valor1={10} valor2={9}/>
-        <VerificaNum valor1={1} valor2={90}/>
-        <VerificaNum valor1={2} valor2={2}/>
+        <MaxMin x={10} y={9}/>
+        <MaxMin x={1} y={90}/>
+        <MaxMin x={2} y={2}/>
       </View>
 
   );
