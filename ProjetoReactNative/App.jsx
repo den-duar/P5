@@ -5,12 +5,14 @@ import Estilos from "./src/components/Estilos";
 import { Group1, Group2 } from "./src/components/Multi";
 import Aleatorio from "./src/components/Aleatorio";
 import MaxMin from "./src/components/MaxMin";
+import Botao from "./src/components/Botao";
+import Contador from "./src/components/Contador";
 
 export default function App() {
   return (
 
       <View style = {Estilos.view}>
-        <Aleatorio min={7} max = {99}/>
+        {/*<Aleatorio min={7} max = {99}/>
         <Aleatorio min={7} max = {99}/>
         <Aleatorio min={7} max = {99}/>
         <Primeiro/>
@@ -20,7 +22,11 @@ export default function App() {
         <MaxMin x={10} y={9}/>
         <MaxMin x={1} y={90}/>
         <MaxMin x={2} y={2}/>
+
+  <Botao/>*/}
+        <Contador inicial={(10)} passo={(1)}/>
       </View>
+
 
   );
 }
