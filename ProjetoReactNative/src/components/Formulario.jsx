@@ -16,6 +16,7 @@ export default props =>{
         <View>
             <TextInput
                 style={{borderWidth:1}}
+                autoCapitalize="none"
                 keyboardType="email-address"
                 placeholder="Email"
                 value={email}
