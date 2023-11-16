@@ -24,6 +24,7 @@ export default props =>{
 
             <TextInput
                 style={{borderWidth:1}}
+                secureTextEntry
                 keyboardType="number-pad"
                 placeholder="Password"
                 value={password}
