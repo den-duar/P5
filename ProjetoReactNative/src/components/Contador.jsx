@@ -1,20 +1,23 @@
 import React, { useState} from "react";
 import { Button, Text, View } from "react-native";
 import Estilos from "./Estilos";
+import Icon from 'react-native-vector-icons/AntDesign';
 
 
-export default ({ inicial, passo }) => {
+export default ({ inicial = 0}) => {
+
+    
 
     const [numero, setNumero] = useState(inicial);
 
     const [mensagem, setMensagem] = useState();
 
 
-    function inc(){
+    function inc(passo){
         setNumero(numero + passo)
     }
 
-    function dec(){
+    function dec(passo){
         setNumero(numero - passo)
 
     }
@@ -25,23 +28,34 @@ export default ({ inicial, passo }) => {
         <>
         <Text style = {Estilos.text}>
             {numero}
+            
         </Text>
         <Text style = {Estilos.text}>
             {mensagem}
         </Text>
 
         <View style = {Estilos.contador}>
-        <Button 
-        title = "+"
-        onPress={inc}/>
+       
 
-        <Button 
-        title = "-"
-        onPress={dec}/>
+        <Icon.Button 
+        name = 'doubleleft'
+        onPress={() => dec(5)}/>
+
+        <Icon.Button 
+        name = 'left'
+        onPress={() => dec(1)}/>
+
+         <Icon.Button
+        name = 'right'
+        onPress={() => inc(1)}/>
+
+        <Icon.Button
+        name = 'doubleright'
+        onPress={() => inc(5)}/>
 
         </View>
-        <Button
-        title = "Por ou Impar?"
+        <Icon.Button
+        name = 'calculator'
         onPress={() => numero%2==0 ? setMensagem('Numero é par!'):setMensagem('Numero é impar!')}
         />
         </>

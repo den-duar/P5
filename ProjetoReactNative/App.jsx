@@ -10,6 +10,7 @@ import Contador from "./src/components/Contador";
 import ListaProduto from "./src/components/ListaProduto";
 import ListaProdutoSection from "./src/components/ListaProdutoSection";
 import Formulario from "./src/components/Formulario";
+import IconDisplay from "./src/components/IconDisplay";
 
 export default function App() {
   return (
@@ -25,12 +26,17 @@ export default function App() {
         <MaxMin x={10} y={9}/>
         <MaxMin x={1} y={90}/>
         <MaxMin x={2} y={2}/>
-
         <Botao/>
         <ListaProduto/>
         <ListaProdutoSection/>
-  <Contador inicial={(10)} passo={(1)}/>*/}
+        <Contador inicial={(10)} passo={(1)}/>
         <Formulario/>
+        <IconDisplay/>
+        */}
+        <Contador/>
+        
+        
+        
       </View>
 
 
